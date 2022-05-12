@@ -1,0 +1,329 @@
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navigation ---------------------------------------------------------------*/
+
+.nav-bar {
+    background: #273043;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+}
+.nav-item {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    list-style-type: none;
+    margin: 20px 0;
+    text-align: center;
+}
+.nav-item a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 1px;
+    background: #fa7a1f;
+    transition: width 0.2s ease-in-out;
+}
+.nav-item a:hover::after {
+    width: 20%;
+}
+.nav-item a {
+    font-size: 25px;
+    font-family: Bebas Neue;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #dbd3c9;
+    cursor: pointer;
+}
+.profil {
+    position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    clip-path: circle();
+    height: 130px;
+}
+
+/* Accueil ----------------------------------------------- */
+
+.accueil {
+    background: #dbd3c9;
+    height: 100vh;
+    border-bottom: solid 0.3px #27304338;
+}
+h1 {
+    text-align: justify;
+    color: #273043;
+    position: relative;
+    left: 20%;
+    top: 30%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+span {
+    color: #565254;
+}
+h2 {
+    text-align: justify;
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 28%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+p {
+    text-align: justify;
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 35%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.fa-linkedin {
+    color: #273043;
+    position: relative;
+    left: 20%;
+    top: 42%;
+    font-size: 70px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-linkedin:hover {
+    color: #565254;
+}
+.fa-github-square {
+    color: #273043;
+    position: relative;
+    left: 20%;
+    top: 42%;
+    font-size: 70px; 
+    text-align: justify;
+}
+.fa-github-square:hover {
+    color: #565254;
+}
+
+/* Experience -------------------------------------------- */
+
+.experience {
+    height: 135vh;
+    width: 100%;
+    background: #dbd3c9;
+    border-bottom: solid 0.3px #27304338;
+}
+.titre {
+    text-align: justify;
+    position: relative;
+    top: 5%;
+    font-family: Bebas Neue;
+    font-size: 60px;
+    color: #273043;
+}
+h3 {
+    text-align: justify;
+    color: #273043;
+    position: relative;
+    left: 20%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-top: 110px;
+}
+.periode {
+    text-align: justify;
+    color: #273043;
+    position: absolute;
+    left: 60%;
+    top: 7px;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+h4 {
+    text-align: justify;
+    color: #565254;
+    position: relative;
+    left: 20%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.p_experience {
+    text-align: justify;
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 3%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/* Formation ------------------------------- */
+.formation {
+    background: #dbd3c9;
+    height: 110vh;
+    border-bottom: solid 0.3px #27304338;
+}
+/* compétences */
+.competences {
+    background: #dbd3c9;
+    height: 100vh;
+    border-bottom: solid 0.3px #27304338;
+}
+.titre_competences {
+    text-align: justify;
+    position: relative;
+    top: 40%;
+    font-family: Bebas Neue;
+    font-size: 60px;
+    color: #273043;
+}
+.competence_h3 {
+    text-align: justify;
+    color: #565254;
+    position: relative;
+    left: 20%;
+    top: 35%;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-top: 80px;
+}
+.fa-html5 {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-html5:hover {
+    color: #f45d01;
+}
+.fa-css3-alt {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-css3-alt:hover {
+    color: #2d7dd2;
+}
+.fa-js {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-js:hover {
+    color: #eeb902;
+}
+.fa-node-js {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-node-js:hover {
+    color: #97cc04;
+}
+.fa-react {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 20px;
+}
+.fa-react:hover {
+    color: #06bee1;
+}
+/* interets */
+.interets {
+    background: #dbd3c9;
+    height: 75vh;
+    border-bottom: solid 0.3px #27304338;
+}
+.titre_interets {
+    text-align: justify;
+    position: relative;
+    top: 30%;
+    font-family: Bebas Neue;
+    font-size: 60px;
+    color: #273043;
+}
+.fa-swimmer {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 50px;
+}
+.fa-bicycle {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 50px;
+}
+.fa-skiing {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 50px;
+}
+.fa-journal-whills {
+    color: #919098;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50px; 
+    text-align: justify;
+    padding-right: 0px;
+}
+

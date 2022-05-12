@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Xavier TRUONG</title>
+    <link rel="stylesheet" href="./Main/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76159c9798.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Acceuil ------------------------------------------------------------------------>
+    <section>
+        <div class="acceuil">
+            <nav>
+                <ul class="liste-nav">
+                    <li class="item-nav"><a href="./Main/index.html">Accueil</a></li>
+                    <li class="item-nav"><a href="./experiences/experiences.html">experiences</a></li>
+                    <li class="item-nav"><a href="./stages/stage.html">stAges</a></li>
+                    <li class="item-nav"><a href="..//AP/AP.html">Ap</a></li>
+                    <li class="item-nav"><a href="./epreuves/epreuves.html">epreuVes</a></li>
+                    <li class="item-nav"><a href="./veille/veille.html">Veilles</a></li>
+                </ul>
+                <img src="./public/images/menu.svg" alt="logo menu" class="logo-menu">
+            </nav>
+
+            <img src="./public/images/ivan-diaz-dmhv60RLmlw-unsplash-removebg-preview.png" alt="spaceship" class="spaceship">
+            <p class="titre_accueil">bienvenue je suis xAvier</p>
+            <p class="para_accueil">deVeloppeur web</p>
+        </div>
+        <button class="floating-btn1" onclick="moveToDescription()">
+            <img src="./public/images/arrow-down-solid.svg" />
+        </button>
+    </section>
+    <!-- Description -------------------------------------------------------------------->
+    <section>
+        <div class="description">
+            <!-- <img src="../public/images/cosmonaute.png" alt="cosmonaute" class="cosmonaute"> -->
+            <p class="presentation">
+                je me présente, je m'Appelle xAvier truong, j'Ai 32 Ans,je suis Actuellement en formAtion et en pleine réorientAtion professionnelle dAns le cAdre d’un cpf de trAnsition professionnelle. 
+                <br><br><br><br> 
+                <span class="texte_presentation">bon voyAge dAns mon portfolio</span>
+            </p>
+            <button class="floating-btn2" onclick="moveToProjets()">
+                <img src="./public/images/arrow-down-solid.svg" />
+            </button>
+        </div>
+    </section>
+    <!-- CV en ligne -->
+    <section>
+        <div class="cv_ligne">
+            
+            <a href="./cv/cv.html">
+                <button class="floating-btn4" >cv en ligne</button>
+            </a> 
+
+        </div>
+    </section>
+
+
+
+    <!-- Projets ------------------------------------------------------------------------>
+    <section>
+        <div class="galerie">
+
+            <div class="item"><i class="fab fa-html5"></i></div>
+            <div class="item"><i class="fab fa-css3-alt"></i></div>
+            <div class="item"><i class="fab fa-js-square"></i></div>
+            <div class="item"><i class="fab fa-node-js"></i></div>
+    
+            <div class="item"><i class="fab fa-react"></i></div>
+            <div class="item"><img src="./public/images/flutter.png"></div>
+            <div class="item"><img src="./public/images/dart.png"></div>
+            <div class="item"><img src="./public/images/mariadb.png"></div>
+    
+        </div>
+        <button class="floating-btn3" onclick="moveToContact()">
+            <img src="./public/images/arrow-down-solid.svg" />
+        </button>
+    </section>
+    <!-- Contact --------------------------------------------------------------------- -->
+    <section class="section-contact" id="contact">
+
+        <h2>contAct</h2>
+
+        <div class="container-form">
+
+            <form class="form-bloc">
+
+                <div class="form-groupe">
+                    <label for="prenom">entrez Votre prenom</label>
+                    <input type="text" placeholder="prenom" required id="prenom">
+                </div>
+
+                <div class="form-groupe">
+                    <label for="nom">entrez Votre nom</label>
+                    <input type="text" placeholder="nom" required id="nom">
+                </div>
+
+                <div class="form-groupe">
+                    <textarea  id="txt" required>Votre messAge</textarea>
+                </div>
+
+                <div class="form-groupe">
+                    <input type="submit" value="enVoyer" class="button-sub">
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+    <footer>
+        <p class="para_footer">
+            design with ♥ by xAVier truong — © 2022 — All rights reserVed
+        </p>
+    </footer>
+    <script src="./Main/app.js"></script>
+</body>
+</html>
