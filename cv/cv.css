@@ -58,6 +58,7 @@ body {
     transform: translateX(-50%);
     clip-path: circle();
     height: 130px;
+    background: #dbd3c9;
 }
 
 /* Accueil ----------------------------------------------- */
