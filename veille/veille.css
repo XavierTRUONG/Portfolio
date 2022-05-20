@@ -190,6 +190,7 @@ nav {
     height: 50vh;
 }
 .p_veille_outils {
+    margin-top: 200px;
     color: #f1f1f1;
     font-family: Major Mono Display;
     font-size: 25px;
@@ -216,4 +217,23 @@ nav {
 .fa-youtube {
     color: #f70909dc;
     font-size: 100px;
+}
+.articles_container {
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+}
+.articles {
+    border-top: 1px solid #DFE1E0;
+    margin: 0px 400px;
+}
+.p_article {
+    margin: 75px;
+    text-align: center;
+    color: #DFE1E0;
+    font-family: Major Mono Display;
+    font-size: 20px;
+}
+.p_article a {
+    color: #DFE1E0;
 }
