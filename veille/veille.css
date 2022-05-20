@@ -237,3 +237,13 @@ nav {
 .p_article a {
     color: #DFE1E0;
 }
+.p_article a:hover{
+    color: #0fcbec;
+}
+.titre_articles {
+    color: #DFE1E0;
+    font-size: 25px;
+    font-family: Major Mono Display;
+    text-align: center;
+    margin-bottom: 150px;
+}
